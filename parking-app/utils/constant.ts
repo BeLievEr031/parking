@@ -8,6 +8,18 @@ const RECENT_ADDED_PARKING_SLOT: IPakingSlot[] = [
         price: 15,
     },
     {
+        id: 11,
+        name: "Cinema Park",
+        address: "Resort Street, Cooper",
+        price: 15,
+    },
+    {
+        id: 12,
+        name: "Cinema Park",
+        address: "Resort Street, Cooper",
+        price: 15,
+    },
+    {
         id: 2,
         name: "Downtown Garage",
         address: "Main Street, Springfield",
