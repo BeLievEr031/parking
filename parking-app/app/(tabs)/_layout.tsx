@@ -45,6 +45,7 @@ const TabsLayout = () => {
                     tabBarIcon: ({ focused, color, size }) => (
                         <FontAwesome name={focused ? 'user' : 'user-o'} size={size} color={color} />
                     ),
+                    headerShown: true
                 }}
             />
         </Tabs>

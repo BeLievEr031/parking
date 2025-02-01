@@ -10,7 +10,7 @@ const singleSlotStyle = StyleSheet.create({
         height: 250
     },
     slotInfo: {
-        padding: 15
+        padding: 15,
     },
     parkingSlot: {
         fontSize: 25,
