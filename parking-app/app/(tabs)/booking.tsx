@@ -4,10 +4,13 @@ import { RECENT_ADDED_PARKING_SLOT } from '@/utils/constant'
 import searchStyle from '@/styles/searchStyle'
 import homeStyle from '@/styles/homeStyle'
 import { AntDesign } from '@expo/vector-icons'
-import { Link } from 'expo-router'
+import { Link, router } from 'expo-router'
 import bookingStyle from '@/styles/bookingStyle'
 
 const booking = () => {
+    const handleViewBooking = () => {
+        router.replace("/(screens)/booking/5")
+    }
     return (
         <SafeAreaView style={{ flex: 1, paddingHorizontal: 10, paddingTop: 10, backgroundColor: "white" }}>
             <FlatList data={RECENT_ADDED_PARKING_SLOT}
@@ -21,6 +24,7 @@ const booking = () => {
                             <Text style={homeStyle.slotAddress}>{item.address}</Text>
                             <TouchableOpacity style={bookingStyle.viewBtn}
                                 activeOpacity={0.7}
+                                onPress={handleViewBooking}
                             >
                                 <Text style={bookingStyle.viewTxt}>View</Text>
                             </TouchableOpacity>
